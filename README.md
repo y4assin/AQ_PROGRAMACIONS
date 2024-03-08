@@ -36,59 +36,6 @@ El projecte s'organitza utilitzant les següents classes:
 7. **Classe `Programació`**: Representa una programació didàctica completa.
 8. **Classe `Activitat`**: Representa una activitat feta a classe.
 
-## Guia de Desplegament (Deployment)
-
-### Requisits Previs
-
-- PHP instal·lat al teu servidor.
-- Composer instal·lat per gestionar les dependències de Laravel.
-- MySQL per a la base de dades.
-
-### Passos per al Desplegament
-
-1. Clona el repositori des de GitHub:
-
-    ```bash
-    git clone https://github.com/oriolmiro/programacions.git
-    ```
-
-2. Accedeix al directori del projecte:
-
-    ```bash
-    cd programacions
-    ```
-
-3. Instal·la les dependències de Laravel amb Composer:
-
-    ```bash
-    composer install
-    ```
-
-4. Copia l'arxiu de configuració i configura el teu entorn:
-
-    ```bash
-    cp .env.example .env
-    ```
-
-    Edita l'arxiu `.env` amb la configuració de la teva base de dades i altres detalls.
-
-5. Genera la clau d'aplicació de Laravel:
-
-    ```bash
-    php artisan key:generate
-    ```
-
-6. Executa les migracions per crear les taules a la base de dades:
-
-    ```bash
-    php artisan migrate
-    ```
-
-7. Inicia el servidor de desenvolupament:
-
-    ```bash
-    php artisan serve
-    ```
 
 8. Accedeix a l'aplicació al teu navegador: [http://localhost:8000](http://localhost:8000)
 
